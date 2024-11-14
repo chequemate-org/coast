@@ -14,21 +14,25 @@ const Header = () => {
   };
 
   const handleLinkClick = (sectionId) => {
-    // Only navigate and close the menu if it's a main link, not a submenu
     setMenuOpen(false);
-    navigate("/");
-    setTimeout(() => {
-      document
-        .getElementById(sectionId)
-        ?.scrollIntoView({ behavior: "smooth" });
-    }, 100);
+
+    if (sectionId === "about-us" || sectionId === "what-s-new") {
+      navigate(`/${sectionId}`);
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        document
+          .getElementById(sectionId)
+          ?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
   };
+  
 
   const toggleDropdown = () => {
     setDropdownOpen((prev) => !prev);
   };
 
-  // Automatically close the mobile menu if screen size changes to large
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
