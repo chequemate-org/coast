@@ -5,6 +5,8 @@ import LogoPrimaryBg2 from "./images/LogoPrimaryBg2.svg";
 import heroImg from "./images/heroImg.svg";
 import whoWeAre from "./images/whoWeAre.svg";
 import Comfort from "./images/Comfort.svg";
+import puffer from "./images/puffer.svg";
+import chequemate from "./images/chequemate.svg";
 import HeroAboutImg from "./images/HeroAboutImg.svg";
 import CoastAboutImg from "./images/CoastAboutImg.svg";
 import aboutsection from "./images/aboutsection.svg";
@@ -28,6 +30,8 @@ export {
   heroImg,
   whoWeAre,
   Comfort,
+  puffer,
+  chequemate,
   HeroAboutImg,
   CoastAboutImg,
   aboutsection,
