@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
         {/* Mission Statement */}
         <div className="lg:w-1/3 mb-4 lg:mb-0">
-          <p className="font-lato lg:text-left text-center text-lg">
+          <p className=" lg:text-left text-center text-lg">
             At Coast, our mission is to empower individuals and businesses,
             acting as the catalyst that bridges the gap between ambition and
             achievement with solutions and products tailored to make things run
@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="lg:w-1/3 flex flex-col sm:flex-row gap-6 sm:gap-10 mt-10 lg:gap-16 justify-between">
           {/* Company Links */}
           <div>
-            <h3 className="font-lato font-semibold mb-3 text-lg">Company</h3>
+            <h3 className=" font-semibold mb-3 text-lg">Company</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#about" className="hover:text-primary3">
@@ -40,7 +40,7 @@ const Footer = () => {
 
           {/* Products Links */}
           <div>
-            <h3 className="font-lato font-semibold text-lg mb-3">Products</h3>
+            <h3 className=" font-semibold text-lg mb-3">Products</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#comfort" className="hover:text-primary3">
@@ -62,7 +62,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div>
-            <h3 className="font-lato font-semibold mb-3 text-lg">
+            <h3 className=" font-semibold mb-3 text-lg">
               Our Socials
             </h3>
             <ul className="space-y-2">

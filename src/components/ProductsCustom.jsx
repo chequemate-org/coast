@@ -32,7 +32,7 @@ const ProductSection = ({
             {badge}
           </div>
           <p className="lg:text-[24px] max-w-[460px] text-white leading-[60px]">{description}</p>
-          <button className="bg-primary1 text-primary font-lato font-bold px-6 py-3 rounded-full uppercase w-full lg:w-[240px] hover:bg-primary4 transition flex items-center justify-center gap-2">
+          <button className="bg-primary1 text-primary  font-bold px-6 py-3 rounded-full uppercase w-full lg:w-[240px] hover:bg-primary4 transition flex items-center justify-center gap-2">
             {buttonText} <FaArrowRight />
           </button>
         </div>

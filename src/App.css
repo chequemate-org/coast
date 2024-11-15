@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Metropolis";
+  src: url("/assets/fonts/metropolis-2/Metropolis-Regular.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @apply font-sans;
+}

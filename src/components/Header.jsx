@@ -52,7 +52,7 @@ const Header = () => {
         >
           <img src={logo} alt="logo" className="h-full" />
         </div>
-        <ul className="lg:flex text-lg hidden space-x-8 font-lato font-semibold">
+        <ul className="lg:flex text-lg hidden space-x-8  font-semibold">
           <li className="relative group">
             <a
               onClick={() => handleLinkClick("products")}
@@ -106,7 +106,7 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <button className="bg-primary text-white font-rubik w-fit px-8 text-md py-2 rounded-full hover:bg-primary5 lg:flex hidden uppercase font-semibold">
+        <button className="bg-primary text-white  w-fit px-8 text-md py-2 rounded-full hover:bg-primary5 lg:flex hidden uppercase font-semibold">
           Join Our Newsletter
         </button>
         <div className="lg:hidden flex items-center">

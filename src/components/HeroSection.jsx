@@ -42,7 +42,7 @@ const HeroSection = () => {
           isInView ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h1 className="lg:text-7xl text-4xl font-medium font-georgia transition-transform duration-1000 hover:scale-105">
+        <h1 className="lg:text-7xl text-4xl font-medium transition-transform duration-1000 hover:scale-105">
           Empowering your digital journey with{" "}
           <span className="text-primary">innovation</span> and{" "}
           <span className="text-primary">excellence</span>
@@ -52,7 +52,7 @@ const HeroSection = () => {
             className="inline ml-3 bg-primary1 md:p-2 p-1 rounded-full"
           />
         </h1>
-        <p className="text-primary max-w-md font-lato md:text-xl text-lg font-normal">
+        <p className="text-primary max-w-md  md:text-xl text-lg font-normal">
           Explore Coast&apos;s suite of solutions that bridges ambition and
           achievement.
         </p>

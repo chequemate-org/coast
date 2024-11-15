@@ -13,10 +13,7 @@ export default {
         orangeHover: "#C66D00",
       },
       fontFamily: {
-        rubik: ["Rubik", "sans-serif"],
-        abril: ["Abril Fatface", "serif"],
-        lato: ["Lato", "system-ui"],
-        georgia: ["GeorgiaCustom", "serif"],
+        sans: ["Metropolis", "sans-serif"],
       },
       screens: {
         xs: "340px",
@@ -24,6 +21,5 @@ export default {
       },
     },
   },
-  variants: {},
   plugins: [],
 };

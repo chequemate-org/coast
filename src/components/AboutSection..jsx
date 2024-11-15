@@ -1,12 +1,13 @@
 import { aboutsection } from "../assets";
+import Badge from "./reusables/Badge";
 
 const AboutSection = () => {
   return (
     <section className="w-full px-[10%] py-16">
       <div className="flex flex-col gap-12 items-center justify-between w-full">
         <div className="w-full flex flex-col md:flow-row justify-between items-">
-          <div className="inline-block px-4 py-2 bg-teal-50 w-fit rounded-full">
-            <span className="text-primary font-semibold">ABOUT COAST</span>
+          <div className="inline-block px-4 py-2 w-fit rounded-full">
+            <Badge text="ABOUT COAST" className="text-primary" />
           </div>
 
           {/* <div className="flex gap-16">

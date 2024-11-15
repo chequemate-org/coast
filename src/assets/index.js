@@ -8,5 +8,38 @@ import Comfort from "./images/Comfort.svg";
 import HeroAboutImg from "./images/HeroAboutImg.svg";
 import CoastAboutImg from "./images/CoastAboutImg.svg";
 import aboutsection from "./images/aboutsection.svg";
+import users from "./icons/users.svg";
+import handshake from "./icons/handshake.svg";
+import flash from "./icons/flash.svg";
+import daches from "./images/daches.svg";
+import kolade from "./images/kolade.svg";
+import ebere from "./images/ebere.svg";
+import irabor from "./images/irabor.svg";
+import ololade from "./images/ololade.svg";
+import preciousSamuel from "./images/precious-samuel.svg";
+import sunita from "./images/sunita.svg";
+import semilore from "./images/semilore.svg";
 
-export { logo, heroStar, LogoPrimaryBg, LogoPrimaryBg2, heroImg, whoWeAre, Comfort, HeroAboutImg, CoastAboutImg, aboutsection };
+export {
+  logo,
+  heroStar,
+  LogoPrimaryBg,
+  LogoPrimaryBg2,
+  heroImg,
+  whoWeAre,
+  Comfort,
+  HeroAboutImg,
+  CoastAboutImg,
+  aboutsection,
+  handshake,
+  flash,
+  users,
+  daches,
+  kolade,
+  ebere,
+  irabor,
+  ololade,
+  preciousSamuel,
+  sunita,
+  semilore,
+};
