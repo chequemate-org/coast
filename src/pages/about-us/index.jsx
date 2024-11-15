@@ -3,6 +3,7 @@ import ContactSection from "../../components/ContactSection";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import HeroAbout from "../../components/HeroAbout";
+import MissionVision from "../../components/MissionVision";
 import NewsletterAbout from "../../components/NewsletterAbout";
 import TeamSection from "../../components/TeamSection";
 import Features from "../../components/Values";
@@ -13,6 +14,7 @@ const About = () => {
       <Header />
       <HeroAbout />
       <AboutSection />
+      <MissionVision />
       <Features />
       <TeamSection />
       <NewsletterAbout />
