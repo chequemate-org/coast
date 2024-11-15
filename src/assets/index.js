@@ -16,7 +16,7 @@ import CoastAboutImg from "./images/CoastAboutImg.svg";
 import aboutsection from "./images/aboutsection.svg";
 import users from "./icons/users.svg";
 import handshake from "./icons/handshake.svg";
-import flash from "./icons/flash.svg";
+import flash from "./icons/Flash.svg";
 import daches from "./images/daches.svg";
 import kolade from "./images/kolade.svg";
 import ebere from "./images/ebere.svg";
