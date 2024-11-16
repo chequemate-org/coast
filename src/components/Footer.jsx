@@ -227,7 +227,7 @@ const Footer = () => {
 
       {/* Logo Section - Shown on both */}
       <div className="flex justify-center my-16">
-        <img src={LogoPrimaryBg2} alt="Coast Group Logo" className="p-5" />
+        <img src={LogoPrimaryBg2} alt="Coast Group Logo" className="w-64 p-5" />
       </div>
 
       {/* Footer Bottom - Different styles for mobile and desktop */}

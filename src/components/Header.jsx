@@ -48,7 +48,7 @@ const Header = () => {
       <nav className="px-[8%] flex justify-between items-center py-4">
         <div
           onClick={() => handleLinkClick("home")}
-          className="py-1 cursor-pointer h-10"
+          className="py-1 cursor-pointer h-9"
         >
           <img src={logo} alt="logo" className="h-full" />
         </div>

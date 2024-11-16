@@ -43,7 +43,7 @@ const ContactSection = () => {
             <ContactInfo
               icon={HiOutlineMail}
               title="Send us an Email"
-              content="helpdesk@owlette.com"
+              content="hello@coastgroup.tech"
               className="text-primary"
             />
 
