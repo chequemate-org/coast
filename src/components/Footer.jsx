@@ -20,7 +20,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-3 text-lg">Company</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#about" className="hover:text-primary3">
+                <a href="/about-us" className="hover:text-primary3">
                   About Us
                 </a>
               </li>
@@ -143,7 +143,7 @@ const Footer = () => {
               <h3 className="font-semibold mb-3 text-lg">Company</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#about" className="hover:text-primary3">
+                  <a href="/about-us" className="hover:text-primary3">
                     About Us
                   </a>
                 </li>
@@ -165,18 +165,23 @@ const Footer = () => {
               <h3 className="font-semibold text-lg mb-3">Products</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#comfort" className="hover:text-primary3">
+                  <a href="#products" className="hover:text-primary3">
                     Comfort
                   </a>
                 </li>
                 <li>
-                  <a href="#chequemate" className="hover:text-primary3">
+                  <a href="#products" className="hover:text-primary3">
                     Chequemate
                   </a>
                 </li>
                 <li>
-                  <a href="#puffer" className="hover:text-primary3">
+                  <a href="#products" className="hover:text-primary3">
                     Puffer
+                  </a>
+                </li>
+                <li>
+                  <a href="#products" className="hover:text-primary3">
+                    Quickshop
                   </a>
                 </li>
               </ul>

@@ -20,14 +20,15 @@ const Home = () => {
   return (
     <div className="w-full relative">
       <div className="relative z-20">
-        <Header />
+        <Header joinId={"join"}/>
         <HeroSection />
         <WhoWeAre />
       </div>
-      <OurProducts />
+      <OurProducts sectionId={"products"} />
       <div className="relative">
         <ProductSection
           id="comfort"
+          link={"https://usecomfort.com"}
           backgroundColor="#024BE4"
           headerStyling={`inline-block text-[#F1F6FA]`}
           backgroundImage={ComfortBg}
@@ -38,6 +39,7 @@ const Home = () => {
         />
         <ProductSection
           id="chequemate"
+          link={"https://chequemateapp.com"}
           backgroundColor="#141F0F"
           headerStyling={`inline-block text-[#F1F6FA]`}
           backgroundImage={ChequemateBg}
@@ -48,6 +50,7 @@ const Home = () => {
         />
         <ProductSection
           id="puffer"
+          link={"https://usepuffer.com"}
           backgroundColor="#008080"
           headerStyling={"text-[#F7FFFF]"}
           backgroundImage={PufferBg}
@@ -58,6 +61,7 @@ const Home = () => {
         />
         <ProductSection
           id="quickshop"
+          link={"https://getquickshop.com"}
           backgroundColor="#FF3C29"
           headerStyling={"text-[#F7FFFF]"}
           backgroundImage={QuickshopBg}
@@ -68,7 +72,7 @@ const Home = () => {
           isLast={true}
         />
       </div>
-      <div className="bg-primary w-full flex justify-center items-center flex-col gap-6 py-[10%] lg:pt-[5%] px-6 text-white h-fit lg:pb-8">
+      <div id="join" className="bg-primary w-full flex justify-center items-center flex-col gap-6 py-[10%] lg:pt-[5%] px-6 text-white h-fit lg:pb-8">
         <h2 className="pb-2 text-3xl md:text-5xl lg:text-7xl ">
           JOIN OUR NEWSLETTER
         </h2>
@@ -87,7 +91,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <ContactSection />
+      <ContactSection sectionId={"contact"} />
       <Footer />
     </div>
   );

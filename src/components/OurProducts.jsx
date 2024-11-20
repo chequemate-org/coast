@@ -1,6 +1,7 @@
-const OurProducts = () => {
+/* eslint-disable react/prop-types */
+const OurProducts = ({ sectionId }) => {
   return (
-    <div className="lg:w-full w-5/6 space-y-4 bg-white h-fit py-16 px-[5%] lg:max-w-[750px]">
+    <div id={sectionId} className="lg:w-full w-5/6 space-y-4 bg-white h-fit py-16 px-[5%] lg:max-w-[750px]">
       <h2 className={`inline-block capitalize text-5xl font-bold`}>
         Our Products
       </h2>

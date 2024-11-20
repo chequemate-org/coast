@@ -20,9 +20,9 @@ const ContactInfo = ({ icon: Icon, title, content, className = "" }) => {
   );
 };
 
-const ContactSection = () => {
+const ContactSection = ({ sectionId }) => {
   return (
-    <section className="w-full auto px-6 py-16">
+    <section id={sectionId} className="w-full auto px-6 py-16">
       <div className="flex flex-col w-full justify-between items-start">
         <SectionHeader className={"border-b-primary4 "} title="Contact Us" />
 

@@ -4,6 +4,7 @@ import { useRef, useEffect } from "react";
 
 const ProductSection = ({
   id,
+  link,
   badge,
   description,
   buttonText = "Get Started",
@@ -85,9 +86,14 @@ const ProductSection = ({
             <p className="lg:text-[24px] text-[18px] max-w-[460px] text-white lg:leading-[60px] leading-[40px]">
               {description}
             </p>
-            <button className="bg-primary1 text-primary font-bold px-8 py-4 rounded-full uppercase hover:bg-primary4 transition flex items-center justify-center gap-3 text-lg w-full sm:w-auto">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-primary1 text-primary font-bold px-8 py-4 rounded-full uppercase hover:bg-primary4 transition flex items-center justify-center gap-3 text-lg lg:w-[240px] w-full sm:w-auto"
+            >
               {buttonText} <FaArrowRight />
-            </button>
+            </a>
           </div>
 
           <div className="lg:w-1/2 lg:pt-[10%] pt-[20%] h-full relative flex items-end">

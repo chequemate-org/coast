@@ -158,7 +158,10 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <button className="bg-primary text-white w-fit px-8 text-[16px] py-4 rounded-full hover:bg-primary5 lg:flex hidden uppercase font-semibold">
+        <button
+          className="bg-primary text-white w-fit px-8 text-[16px] py-4 rounded-full hover:bg-primary5 lg:flex hidden uppercase font-semibold"
+          onClick={() => handleLinkClick("join")}
+        >
           Join Our Newsletter
         </button>
         <div className="lg:hidden flex items-center">

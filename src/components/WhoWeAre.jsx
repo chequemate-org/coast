@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { whoWeAre } from "../assets";
 import SectionHeader from "./reusables/SectionHeader";
 
@@ -14,9 +15,11 @@ const WhoWeAre = () => {
             aim to become a leading technology-driven financial services and
             talent marketplace company.
           </p>
-          <button className="bg-primary1 text-primary  font-bold px-6 py-3 rounded-full uppercase w-full lg:w-[240px] hover:bg-primary4 transition">
-            See More
-          </button>
+          <Link to={"/about-us"}>
+            <button className="bg-primary1 text-primary  font-bold px-6 py-3 rounded-full uppercase w-full lg:w-[240px] hover:bg-primary4 transition">
+              See More
+            </button>
+          </Link>
         </div>
 
         <div className="w-full lg:w-[48%] flex justify-center lg:justify-end items-center">
