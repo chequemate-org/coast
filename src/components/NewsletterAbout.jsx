@@ -1,6 +1,7 @@
-const NewsletterAbout = () => {
+/* eslint-disable react/prop-types */
+const NewsletterAbout = ({sectionId}) => {
   return (
-    <div className="w-full bg-primary space-y-10 h-fit py-16 min-h-[567px] flex flex-col justify-center items-center">
+    <div id={sectionId} className="w-full bg-primary space-y-10 h-fit py-16 min-h-[567px] flex flex-col justify-center items-center">
       <h2 className="pb-2 text-3xl px-5 lg:text-7xl text-white uppercase font-extralight">
         Join our newsletter
       </h2>

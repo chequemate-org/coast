@@ -12,6 +12,7 @@ import ContactSection from "../../components/ContactSection";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import HeroSection from "../../components/HeroSection";
+import NewsletterAbout from "../../components/NewsletterAbout";
 import OurProducts from "../../components/OurProducts";
 import ProductSection from "../../components/ProductsCustom";
 import WhoWeAre from "../../components/WhoWeAre";
@@ -72,28 +73,8 @@ const Home = () => {
           isLast={true}
         />
       </div>
-      <div
-        id="join"
-        className="bg-primary w-full flex justify-center items-center flex-col gap-6 py-[10%] lg:pt-[5%] px-6 text-white h-fit lg:pb-8"
-      >
-        <h2 className="pb-2 text-3xl md:text-5xl lg:text-7xl ">
-          JOIN OUR NEWSLETTER
-        </h2>
-        <p className="text-sm lg:text-2xl">
-          We&apos;ll send you a nice letter once per week. No spam.
-        </p>
-        <div className="flex items-center w-full lg:w-1/3 overflow-hidden mb-[5%] bg-primary1 rounded-md text-primary">
-          <input
-            type="text"
-            className="outline-none bg-primary1 w-[100%] py-4 px-3 flex-grow placeholder:text-primary5 placeholder:text-lg"
-            placeholder="email address"
-          />
+      <NewsletterAbout sectionId={"join"} />
 
-          <button className="block text-white bg-primary py-[11px] px-6 mr-1 rounded-md">
-            Subscribe
-          </button>
-        </div>
-      </div>
       <ContactSection sectionId={"contact"} />
       <Footer />
     </div>

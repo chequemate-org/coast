@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import HeroAbout from "../../components/HeroAbout";
 import MissionVision from "../../components/MissionVision";
 import NewsletterAbout from "../../components/NewsletterAbout";
+import TeamSection from "../../components/TeamSection";
 import Features from "../../components/Values";
 
 const About = () => {
@@ -15,7 +16,7 @@ const About = () => {
       <AboutSection />
       <MissionVision />
       <Features />
-      {/* <TeamSection /> */}
+      <TeamSection />
       <NewsletterAbout />
       <ContactSection />
       <Footer />

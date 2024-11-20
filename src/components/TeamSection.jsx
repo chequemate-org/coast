@@ -1,11 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import {
-  daches,
-  ebere,
-  irabor,
-  kolade,
-  ololade,
   preciousSamuel,
   semilore,
   sunita,
@@ -65,36 +60,36 @@ const TeamSection = () => {
       position: "Chief Financial Officer (CFO)",
       imageUrl: sunita,
     },
-    {
-      name: "KOLADE ADEWUNMI",
-      position: "PR / Media Manager",
-      imageUrl: kolade,
-    },
+    // {
+    //   name: "KOLADE ADEWUNMI",
+    //   position: "PR / Media Manager",
+    //   imageUrl: kolade,
+    // },
     {
       name: "SEMILORE AKONI",
-      position: "Marketing Strategist",
+      position: "Chief Product Officer (CPO)",
       imageUrl: semilore,
     },
-    {
-      name: "IRABOR OSASUMWEN",
-      position: "Lead Graphics Designer",
-      imageUrl: irabor,
-    },
-    {
-      name: "EBERE AKPUCHE",
-      position: "Owletonline Manager",
-      imageUrl: ebere,
-    },
-    {
-      name: "OLOLADE NIFEMI",
-      position: "Strix General Manager",
-      imageUrl: ololade,
-    },
-    {
-      name: "DACHES DACHUNG",
-      position: "Flyt Manager",
-      imageUrl: daches,
-    },
+    // {
+    //   name: "IRABOR OSASUMWEN",
+    //   position: "Lead Graphics Designer",
+    //   imageUrl: irabor,
+    // },
+    // {
+    //   name: "EBERE AKPUCHE",
+    //   position: "Owletonline Manager",
+    //   imageUrl: ebere,
+    // },
+    // {
+    //   name: "OLOLADE NIFEMI",
+    //   position: "Strix General Manager",
+    //   imageUrl: ololade,
+    // },
+    // {
+    //   name: "DACHES DACHUNG",
+    //   position: "Flyt Manager",
+    //   imageUrl: daches,
+    // },
   ];
 
   useEffect(() => {
@@ -115,7 +110,7 @@ const TeamSection = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-8">
         {isLoading
           ? Array(8)
               .fill(null)

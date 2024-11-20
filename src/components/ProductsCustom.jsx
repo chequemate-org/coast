@@ -96,7 +96,7 @@ const ProductSection = ({
             </a>
           </div>
 
-          <div className="lg:w-1/2 lg:pt-[10%] pt-[20%] h-full relative flex items-end">
+          <div className="lg:w-1/2 pr-[5%] lg:pt-[12%] pt-[30%] h-full relative flex items-end">
             <img
               src={imageUrl}
               alt={imageAlt}

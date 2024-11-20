@@ -87,7 +87,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-white w-full shadow-md py-2 fixed top-0 left-0 z-50">
+    <header className="bg-white mb-[10%] w-full shadow-md py-2 fixed top-0 left-0 z-50">
       <nav className="px-[8%] flex justify-between items-center py-4">
         <div
           onClick={() => handleLinkClick("home")}
