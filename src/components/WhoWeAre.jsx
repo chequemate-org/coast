@@ -4,9 +4,9 @@ import SectionHeader from "./reusables/SectionHeader";
 
 const WhoWeAre = () => {
   return (
-    <section className="bg-primary3 flex flex-col mx py-16">
+    <section className="bg-primary3 flex flex-col justify-center items-center py-16">
       <SectionHeader className={"border-b-primary4 "} title="Who we are" />
-      <div className="md:mx-[5%] mx-5 flex flex-col lg:flex-row items-center lg:justify-between gap-12 mt-10">
+      <div className="md:mx-[5%] max-w-[1540px] mx-5 flex flex-col lg:flex-row items-center lg:justify-between gap-12 mt-10">
         <div className="w-full lg:w-[48%] flex flex-col justify-center">
           <p className=" text-lg mb-8">
             Coast Group of Technology Holding Companies is a parent company of

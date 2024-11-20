@@ -88,86 +88,88 @@ const Header = () => {
 
   return (
     <header className="bg-white mb-[10%] w-full shadow-md py-2 fixed top-0 left-0 z-50">
-      <nav className="px-[8%] flex justify-between items-center py-4">
-        <div
-          onClick={() => handleLinkClick("home")}
-          className="py-1 cursor-pointer h-9"
-        >
-          <img src={logo} alt="logo" className="h-full" />
-        </div>
-        <ul className="lg:flex text-lg hidden space-x-8 font-semibold">
-          <li className="relative group">
-            <button
-              ref={dropdownButtonRef}
-              onClick={() => toggleDropdown()}
-              className="cursor-pointer transition-colors duration-300 hover:text-primary active:text-primary flex items-center gap-1"
-            >
-              Product{" "}
-              <FaAngleDown
-                className={`transform transition-transform duration-200 ${
-                  dropdownOpen ? "rotate-180" : ""
-                }`}
-              />
-            </button>
-            {dropdownOpen && (
-              <div
-                ref={dropdownRef}
-                className="absolute top-full left-0 mt-2 w-40 bg-white shadow-lg rounded-lg z-10 py-1"
+      <nav className="px-[8%] py-4">
+        <div className="max-w-[1440px] flex justify-between items-center w-full">
+          <div
+            onClick={() => handleLinkClick("home")}
+            className="py-1 cursor-pointer h-9"
+          >
+            <img src={logo} alt="logo" className="h-full" />
+          </div>
+          <ul className="lg:flex text-lg hidden space-x-8 font-semibold">
+            <li className="relative group">
+              <button
+                ref={dropdownButtonRef}
+                onClick={() => toggleDropdown()}
+                className="cursor-pointer transition-colors duration-300 hover:text-primary active:text-primary flex items-center gap-1"
               >
-                <a
-                  onClick={() => handleLinkClick("comfort")}
-                  className="block px-4 py-3 text-gray-600 hover:bg-primary hover:text-white cursor-pointer transition-colors duration-200"
+                Product{" "}
+                <FaAngleDown
+                  className={`transform transition-transform duration-200 ${
+                    dropdownOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {dropdownOpen && (
+                <div
+                  ref={dropdownRef}
+                  className="absolute top-full left-0 mt-2 w-40 bg-white shadow-lg rounded-lg z-10 py-1"
                 >
-                  Comfort
-                </a>
-                <a
-                  onClick={() => handleLinkClick("chequemate")}
-                  className="block px-4 py-3 text-gray-600 hover:bg-primary hover:text-white cursor-pointer transition-colors duration-200"
-                >
-                  Chequemate
-                </a>
-                <a
-                  onClick={() => handleLinkClick("puffer")}
-                  className="block px-4 py-3 text-gray-600 hover:bg-primary hover:text-white cursor-pointer transition-colors duration-200"
-                >
-                  Puffer
-                </a>
-                <a
-                  onClick={() => handleLinkClick("quickshop")}
-                  className="block px-4 py-3 text-gray-600 hover:bg-primary hover:text-white cursor-pointer transition-colors duration-200"
-                >
-                  Quickshop
-                </a>
-              </div>
-            )}
-          </li>
-          <li>
-            <a
-              onClick={() => handleLinkClick("about-us")}
-              className="cursor-pointer transition-colors duration-300 hover:text-primary active:text-primary"
-            >
-              About Us
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => handleLinkClick("what-s-new")}
-              className="cursor-pointer transition-colors duration-300 hover:text-primary active:text-primary"
-            >
-              What&apos;s New?
-            </a>
-          </li>
-        </ul>
-        <button
-          className="bg-primary text-white w-fit px-8 text-[16px] py-4 rounded-full hover:bg-primary5 lg:flex hidden uppercase font-semibold"
-          onClick={() => handleLinkClick("join")}
-        >
-          Join Our Newsletter
-        </button>
-        <div className="lg:hidden flex items-center">
-          <button className="text-2xl" onClick={toggleMenu}>
-            {menuOpen ? <FaTimes /> : <IoMenuOutline />}
+                  <a
+                    onClick={() => handleLinkClick("comfort")}
+                    className="block px-4 py-3 text-gray-600 hover:bg-primary hover:text-white cursor-pointer transition-colors duration-200"
+                  >
+                    Comfort
+                  </a>
+                  <a
+                    onClick={() => handleLinkClick("chequemate")}
+                    className="block px-4 py-3 text-gray-600 hover:bg-primary hover:text-white cursor-pointer transition-colors duration-200"
+                  >
+                    Chequemate
+                  </a>
+                  <a
+                    onClick={() => handleLinkClick("puffer")}
+                    className="block px-4 py-3 text-gray-600 hover:bg-primary hover:text-white cursor-pointer transition-colors duration-200"
+                  >
+                    Puffer
+                  </a>
+                  <a
+                    onClick={() => handleLinkClick("quickshop")}
+                    className="block px-4 py-3 text-gray-600 hover:bg-primary hover:text-white cursor-pointer transition-colors duration-200"
+                  >
+                    Quickshop
+                  </a>
+                </div>
+              )}
+            </li>
+            <li>
+              <a
+                onClick={() => handleLinkClick("about-us")}
+                className="cursor-pointer transition-colors duration-300 hover:text-primary active:text-primary"
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => handleLinkClick("what-s-new")}
+                className="cursor-pointer transition-colors duration-300 hover:text-primary active:text-primary"
+              >
+                What&apos;s New?
+              </a>
+            </li>
+          </ul>
+          <button
+            className="bg-primary text-white w-fit px-8 text-[16px] py-4 rounded-full hover:bg-primary5 lg:flex hidden uppercase font-semibold"
+            onClick={() => handleLinkClick("join")}
+          >
+            Join Our Newsletter
           </button>
+          <div className="lg:hidden flex items-center">
+            <button className="text-2xl" onClick={toggleMenu}>
+              {menuOpen ? <FaTimes /> : <IoMenuOutline />}
+            </button>
+          </div>
         </div>
       </nav>
       {menuOpen && (

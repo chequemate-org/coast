@@ -187,7 +187,7 @@ const Footer = () => {
       </div>
 
       {/* Desktop Footer */}
-      <div className="hidden lg:block container mx-auto px-4">
+      <div className="hidden max-w-[1540px] lg:block container mx-auto px-4">
         {/* Top Section */}
         <div className="flex justify-between items-start mb-16">
           {/* Mission Statement */}
@@ -319,7 +319,7 @@ const Footer = () => {
       </Link>
 
       {/* Footer Bottom - Different styles for mobile and desktop */}
-      <div className="container mx-auto px-4">
+      <div className="container max-w-[1440px] mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <p className="text-xs sm:text-sm mb-4 lg:mb-0">
             © 2024 All Right Reserved
