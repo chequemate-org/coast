@@ -1,9 +1,37 @@
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 import { LogoPrimaryBg2 } from "../assets";
 import { FaLinkedinIn, FaX } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleLinkClick = (sectionId) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 100);
+    } else {
+      scrollToSection(sectionId);
+    }
+  };
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const headerOffset = 100;
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <footer className="bg-primary text-white py-8 z-100">
       {/* Mobile Footer */}
@@ -26,12 +54,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="#products" className="hover:text-primary3">
+                <a
+                  onClick={() => handleLinkClick("products")}
+                  className="hover:text-primary3 cursor-pointer"
+                >
                   Products
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-primary3">
+                <a
+                  onClick={() => handleLinkClick("contact")}
+                  className="hover:text-primary3 cursor-pointer"
+                >
                   Contact Us
                 </a>
               </li>
@@ -43,18 +77,35 @@ const Footer = () => {
             <h3 className="font-semibold mb-3 text-lg">Products</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#comfort" className="hover:text-primary3">
+                <a
+                  onClick={() => handleLinkClick("comfort")}
+                  className="hover:text-primary3 cursor-pointer"
+                >
                   Comfort
                 </a>
               </li>
               <li>
-                <a href="#chequemate" className="hover:text-primary3">
+                <a
+                  onClick={() => handleLinkClick("chequemate")}
+                  className="hover:text-primary3 cursor-pointer"
+                >
                   Chequemate
                 </a>
               </li>
               <li>
-                <a href="#puffer" className="hover:text-primary3">
+                <a
+                  onClick={() => handleLinkClick("puffer")}
+                  className="hover:text-primary3 cursor-pointer"
+                >
                   Puffer
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={() => handleLinkClick("quickshop")}
+                  className="hover:text-primary3 cursor-pointer"
+                >
+                  Quickshop
                 </a>
               </li>
             </ul>
@@ -66,7 +117,9 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#instagram"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-primary3 flex items-center gap-2"
                 >
                   <FaInstagram /> Instagram
@@ -74,7 +127,9 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#x"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-primary3 flex items-center gap-2"
                 >
                   <FaX /> X (formerly Twitter)
@@ -82,7 +137,9 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#linkedin"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-primary3 flex items-center gap-2"
                 >
                   <FaLinkedinIn /> LinkedIn
@@ -90,7 +147,9 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#youtube"
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-primary3 flex items-center gap-2"
                 >
                   <FaYoutube /> YouTube
@@ -142,19 +201,28 @@ const Footer = () => {
             {/* Company Links */}
             <div>
               <h3 className="font-semibold mb-3 text-lg">Company</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 <li>
-                  <a href="/about-us" className="hover:text-primary3">
+                  <a
+                    onClick={() => handleLinkClick("about-us")}
+                    className="hover:text-primary3 cursor-pointer"
+                  >
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#products" className="hover:text-primary3">
+                  <a
+                    onClick={() => handleLinkClick("products")}
+                    className="hover:text-primary3 cursor-pointer"
+                  >
                     Products
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:text-primary3">
+                  <a
+                    onClick={() => handleLinkClick("contact")}
+                    className="hover:text-primary3 cursor-pointer"
+                  >
                     Contact Us
                   </a>
                 </li>
@@ -164,25 +232,29 @@ const Footer = () => {
             {/* Products Links */}
             <div>
               <h3 className="font-semibold text-lg mb-3">Products</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 <li>
-                  <a href="#products" className="hover:text-primary3">
+                  <a
+                    onClick={() => handleLinkClick("comfort")}
+                    className="hover:text-primary3 cursor-pointer"
+                  >
                     Comfort
                   </a>
                 </li>
                 <li>
-                  <a href="#products" className="hover:text-primary3">
+                  <a
+                    onClick={() => handleLinkClick("chequemate")}
+                    className="hover:text-primary3 cursor-pointer"
+                  >
                     Chequemate
                   </a>
                 </li>
                 <li>
-                  <a href="#products" className="hover:text-primary3">
+                  <a
+                    onClick={() => handleLinkClick("puffer")}
+                    className="hover:text-primary3 cursor-pointer"
+                  >
                     Puffer
-                  </a>
-                </li>
-                <li>
-                  <a href="#products" className="hover:text-primary3">
-                    Quickshop
                   </a>
                 </li>
               </ul>
