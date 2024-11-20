@@ -1,7 +1,18 @@
-import { chequemate, ChequemateBg, Comfort, ComfortBg, puffer, PufferBg } from "../../assets";
+import {
+  chequemate,
+  ChequemateBg,
+  Comfort,
+  ComfortBg,
+  puffer,
+  PufferBg,
+  quickshop,
+  QuickshopBg,
+} from "../../assets";
+import ContactSection from "../../components/ContactSection";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import HeroSection from "../../components/HeroSection";
+import OurProducts from "../../components/OurProducts";
 import ProductSection from "../../components/ProductsCustom";
 import WhoWeAre from "../../components/WhoWeAre";
 
@@ -13,9 +24,10 @@ const Home = () => {
         <HeroSection />
         <WhoWeAre />
       </div>
-
-      <div className="relative" style={{ height: `${100 * 3 + 50}vh` }}>
+      <OurProducts />
+      <div className="relative">
         <ProductSection
+          id="comfort"
           backgroundColor="#024BE4"
           headerStyling={`inline-block text-[#F1F6FA]`}
           backgroundImage={ComfortBg}
@@ -25,6 +37,7 @@ const Home = () => {
           imageAlt="Comfort Mockup"
         />
         <ProductSection
+          id="chequemate"
           backgroundColor="#141F0F"
           headerStyling={`inline-block text-[#F1F6FA]`}
           backgroundImage={ChequemateBg}
@@ -34,6 +47,7 @@ const Home = () => {
           imageAlt="Chequemate Mockup"
         />
         <ProductSection
+          id="puffer"
           backgroundColor="#008080"
           headerStyling={"text-[#F7FFFF]"}
           backgroundImage={PufferBg}
@@ -41,9 +55,39 @@ const Home = () => {
           description="Puffer is an online platform that connects businesses of all sizes with highly skilled, pre-vetted freelancers for short-term and long-term projects."
           imageUrl={puffer}
           imageAlt="Puffer Mockup"
+        />
+        <ProductSection
+          id="quickshop"
+          backgroundColor="#FF3C29"
+          headerStyling={"text-[#F7FFFF]"}
+          backgroundImage={QuickshopBg}
+          badge="QUICKSHOP"
+          description="Quickshop is an e-commerce marketplace that connects vendors and buyers, facilitating seamless transactions of goods."
+          imageUrl={quickshop}
+          imageAlt="quickshop Mockup"
           isLast={true}
         />
       </div>
+      <div className="bg-primary w-full flex justify-center items-center flex-col gap-6 py-[10%] lg:pt-[5%] px-6 text-white h-fit lg:pb-8">
+        <h2 className="pb-2 text-3xl md:text-5xl lg:text-7xl ">
+          JOIN OUR NEWSLETTER
+        </h2>
+        <p className="text-sm lg:text-2xl">
+          We&apos;ll send you a nice letter once per week. No spam.
+        </p>
+        <div className="flex items-center w-full lg:w-1/3 overflow-hidden mb-[5%] bg-primary1 rounded-md text-primary">
+          <input
+            type="text"
+            className="outline-none bg-primary1 w-[100%] py-4 px-3 flex-grow placeholder:text-primary5 placeholder:text-lg"
+            placeholder="email address"
+          />
+
+          <button className="block text-white bg-primary py-[11px] px-6 mr-1 rounded-md">
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <ContactSection />
       <Footer />
     </div>
   );

@@ -8,7 +8,9 @@ import Comfort from "./images/Comfort.svg";
 import ComfortBg from "./images/ComfortBg.png";
 import PufferBg from "./images/PufferBg.png";
 import ChequemateBg from "./images/ChequemateBg.png";
+import QuickshopBg from "./images/Quickshop.png";
 import puffer from "./images/puffer.svg";
+import quickshop from "./images/quickshop.svg";
 import missionImg from "./images/missionImg.svg";
 import chequemate from "./images/chequemate.svg";
 import HeroAboutImg from "./images/HeroAboutImg.svg";
@@ -33,11 +35,13 @@ export {
   ComfortBg,
   PufferBg,
   ChequemateBg,
+  QuickshopBg,
   LogoPrimaryBg2,
   heroImg,
   whoWeAre,
   Comfort,
   puffer,
+  quickshop,
   chequemate,
   missionImg,
   HeroAboutImg,

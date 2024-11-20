@@ -4,20 +4,21 @@ import { FaLinkedinIn, FaX } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-8">
+    <footer className="bg-primary text-white py-8 z-100">
       {/* Mobile Footer */}
-      <div className="lg:hidden container mx-auto px-">
+      <div className="lg:hidden px-7">
         <p className="text-center leading-8 text-lg mb-12">
           At Coast, our mission is to empower individuals and businesses, acting
           as the catalyst that bridges the gap between ambition and achievement
           with solutions and products tailored to make things run smoothly.
         </p>
 
-        <div className="grid grid-cols-2 gap-8">
-          {/* Company Links */}
-          <div>
+        {/* Columns Container */}
+        <div className="grid grid-cols-2 gap-x-[20%] gap-y-14 pl-5">
+          {/* Company Section */}
+          <div className="w-full">
             <h3 className="font-semibold mb-3 text-lg">Company</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               <li>
                 <a href="#about" className="hover:text-primary3">
                   About Us
@@ -36,10 +37,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Products Links */}
-          <div>
-            <h3 className="font-semibold text-lg mb-3">Products</h3>
-            <ul className="space-y-2">
+          {/* Products Section */}
+          <div className="w-full">
+            <h3 className="font-semibold mb-3 text-lg">Products</h3>
+            <ul className="space-y-3">
               <li>
                 <a href="#comfort" className="hover:text-primary3">
                   Comfort
@@ -58,10 +59,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Links */}
-          <div>
+          {/* Socials Section */}
+          <div className="w-full">
             <h3 className="font-semibold mb-3 text-lg">Our Socials</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               <li>
                 <a
                   href="#instagram"
@@ -83,8 +84,7 @@ const Footer = () => {
                   href="#linkedin"
                   className="hover:text-primary3 flex items-center gap-2"
                 >
-                  <FaLinkedinIn />
-                  LinkedIn
+                  <FaLinkedinIn /> LinkedIn
                 </a>
               </li>
               <li>
@@ -98,10 +98,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Legal Links */}
-          <div>
+          {/* Legal Section */}
+          <div className="w-full">
             <h3 className="font-semibold mb-3 text-lg">Legal</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               <li>
                 <a href="#terms" className="hover:text-primary3">
                   Terms of Service
@@ -227,7 +227,7 @@ const Footer = () => {
 
       {/* Logo Section - Shown on both */}
       <div className="flex justify-center my-16">
-        <img src={LogoPrimaryBg2} alt="Coast Group Logo" className="w-64 p-5" />
+        <img src={LogoPrimaryBg2} alt="Coast Group Logo" className="w-52 p-5" />
       </div>
 
       {/* Footer Bottom - Different styles for mobile and desktop */}
