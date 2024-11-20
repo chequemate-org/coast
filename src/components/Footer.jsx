@@ -1,6 +1,7 @@
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 import { LogoPrimaryBg2 } from "../assets";
 import { FaLinkedinIn, FaX } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,9 +21,9 @@ const Footer = () => {
             <h3 className="font-semibold mb-3 text-lg">Company</h3>
             <ul className="space-y-3">
               <li>
-                <a href="/about-us" className="hover:text-primary3">
+                <Link to="/about-us" className="hover:text-primary3">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#products" className="hover:text-primary3">
@@ -231,9 +232,15 @@ const Footer = () => {
       </div>
 
       {/* Logo Section - Shown on both */}
-      <div className="flex justify-center my-16">
-        <img src={LogoPrimaryBg2} alt="Coast Group Logo" className="w-52 p-5" />
-      </div>
+      <Link to={"/"}>
+        <div className="flex justify-center my-16">
+          <img
+            src={LogoPrimaryBg2}
+            alt="Coast Group Logo"
+            className="w-52 p-5"
+          />
+        </div>
+      </Link>
 
       {/* Footer Bottom - Different styles for mobile and desktop */}
       <div className="container mx-auto px-4">

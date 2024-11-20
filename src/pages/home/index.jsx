@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div className="w-full relative">
       <div className="relative z-20">
-        <Header joinId={"join"}/>
+        <Header joinId={"join"} />
         <HeroSection />
         <WhoWeAre />
       </div>
@@ -49,17 +49,6 @@ const Home = () => {
           imageAlt="Chequemate Mockup"
         />
         <ProductSection
-          id="puffer"
-          link={"https://usepuffer.com"}
-          backgroundColor="#008080"
-          headerStyling={"text-[#F7FFFF]"}
-          backgroundImage={PufferBg}
-          badge="Puffer"
-          description="Puffer is an online platform that connects businesses of all sizes with highly skilled, pre-vetted freelancers for short-term and long-term projects."
-          imageUrl={puffer}
-          imageAlt="Puffer Mockup"
-        />
-        <ProductSection
           id="quickshop"
           link={"https://getquickshop.com"}
           backgroundColor="#FF3C29"
@@ -71,8 +60,22 @@ const Home = () => {
           imageAlt="quickshop Mockup"
           isLast={true}
         />
+        <ProductSection
+          id="puffer"
+          link={"https://usepuffer.com"}
+          backgroundColor="#008080"
+          headerStyling={"text-[#F7FFFF]"}
+          backgroundImage={PufferBg}
+          badge="Puffer"
+          description="Puffer is an online platform that connects businesses of all sizes with highly skilled, pre-vetted freelancers for short-term and long-term projects."
+          imageUrl={puffer}
+          imageAlt="Puffer Mockup"
+        />
       </div>
-      <div id="join" className="bg-primary w-full flex justify-center items-center flex-col gap-6 py-[10%] lg:pt-[5%] px-6 text-white h-fit lg:pb-8">
+      <div
+        id="join"
+        className="bg-primary w-full flex justify-center items-center flex-col gap-6 py-[10%] lg:pt-[5%] px-6 text-white h-fit lg:pb-8"
+      >
         <h2 className="pb-2 text-3xl md:text-5xl lg:text-7xl ">
           JOIN OUR NEWSLETTER
         </h2>
