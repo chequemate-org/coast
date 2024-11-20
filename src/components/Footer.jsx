@@ -8,13 +8,17 @@ const Footer = () => {
   const location = useLocation();
 
   const handleLinkClick = (sectionId) => {
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
-        scrollToSection(sectionId);
-      }, 100);
+    if (sectionId === "about-us") {
+      navigate(`/${sectionId}`);
     } else {
-      scrollToSection(sectionId);
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          scrollToSection(sectionId);
+        }, 100);
+      } else {
+        scrollToSection(sectionId);
+      }
     }
   };
 
