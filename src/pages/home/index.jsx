@@ -58,7 +58,6 @@ const Home = () => {
           description="Quickshop is an e-commerce marketplace that connects vendors and buyers, facilitating seamless transactions of goods."
           imageUrl={quickshop}
           imageAlt="quickshop Mockup"
-          isLast={true}
         />
         <ProductSection
           id="puffer"
@@ -70,6 +69,7 @@ const Home = () => {
           description="Puffer is an online platform that connects businesses of all sizes with highly skilled, pre-vetted freelancers for short-term and long-term projects."
           imageUrl={puffer}
           imageAlt="Puffer Mockup"
+          isLast={true}
         />
       </div>
       <div
