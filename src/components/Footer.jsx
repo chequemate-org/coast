@@ -40,6 +40,15 @@ const Footer = () => {
     <footer className="bg-primary text-white py-8 z-100">
       {/* Mobile Footer */}
       <div className="lg:hidden px-7">
+        <Link to={"/"}>
+          <div className="flex justify-center">
+            <img
+              src={LogoPrimaryBg2}
+              alt="Coast Group Logo"
+              className="w-52 p-5"
+            />
+          </div>
+        </Link>
         <p className="text-center leading-8 text-lg mb-12">
           At Coast, our mission is to empower individuals and businesses, acting
           as the catalyst that bridges the gap between ambition and achievement
@@ -189,19 +198,31 @@ const Footer = () => {
       {/* Desktop Footer */}
       <div className="hidden max-w-[1540px] lg:block container mx-auto px-4">
         {/* Top Section */}
-        <div className="flex justify-between items-start mb-16">
-          {/* Mission Statement */}
-          <div className="w-1/3">
-            <p className="text-lg">
-              At Coast, our mission is to empower individuals and businesses,
-              acting as the catalyst that bridges the gap between ambition and
-              achievement with solutions and products tailored to make things
-              run smoothly.
-            </p>
+        <div className="flex w-full justify-between items-start">
+          <div className="flex md:w-2/3 flex-col justify-between items-start mb-16">
+            {/* Logo Section - Shown on both */}
+            <Link to={"/"}>
+              <div className="flex justify-center">
+                <img
+                  src={LogoPrimaryBg2}
+                  alt="Coast Group Logo"
+                  className="w-52 p-5"
+                />
+              </div>
+            </Link>
+            {/* Mission Statement */}
+            <div className="w-1/2">
+              <p className="text-lg">
+                At Coast, our mission is to empower individuals and businesses,
+                acting as the catalyst that bridges the gap between ambition and
+                achievement with solutions and products tailored to make things
+                run smoothly.
+              </p>
+            </div>
           </div>
 
           {/* Navigation Links */}
-          <div className="flex gap-24">
+          <div className="flex md:w-1/3 gap-20">
             {/* Company Links */}
             <div>
               <h3 className="font-semibold mb-3 text-lg">Company</h3>
@@ -306,17 +327,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Logo Section - Shown on both */}
-      <Link to={"/"}>
-        <div className="flex justify-center my-16">
-          <img
-            src={LogoPrimaryBg2}
-            alt="Coast Group Logo"
-            className="w-52 p-5"
-          />
-        </div>
-      </Link>
 
       {/* Footer Bottom - Different styles for mobile and desktop */}
       <div className="container max-w-[1440px] mx-auto px-4">
