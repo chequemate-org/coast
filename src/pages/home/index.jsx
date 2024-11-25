@@ -30,8 +30,8 @@ const Home = () => {
         <ProductSection
           id="comfort"
           link={"https://usecomfort.com"}
-          backgroundColor="#024BE4"
-          headerStyling={`inline-block text-[#F1F6FA]`}
+          backgroundColor="#EEF3FF"
+          headerStyling={`inline-block text-[#024BE4]`}
           backgroundImage={ComfortBg}
           badge="Comfort"
           description="Comfort is a premier payment and financial technology ecosystem designed to enable convenient and secure bill payments."
@@ -41,8 +41,8 @@ const Home = () => {
         <ProductSection
           id="chequemate"
           link={"https://chequemateapp.com"}
-          backgroundColor="#141F0F"
-          headerStyling={`inline-block text-[#F1F6FA]`}
+          backgroundColor="#E1F4EB"
+          headerStyling={`inline-block text-[#131D0E]`}
           backgroundImage={ChequemateBg}
           badge="Chequemate"
           description="Chequemate is a savings platform dedicated to helping raise funds for your chosen cause. Users can create groups with financial goals and share the rewards when objectives are met."
@@ -52,8 +52,8 @@ const Home = () => {
         <ProductSection
           id="quickshop"
           link={"https://getquickshop.com"}
-          backgroundColor="#FF3C29"
-          headerStyling={"text-[#F7FFFF]"}
+          backgroundColor="#FFFAFA"
+          headerStyling={"text-[#F02612]"}
           backgroundImage={QuickshopBg}
           badge="QUICKSHOP"
           description="Quickshop is an e-commerce marketplace that connects vendors and buyers, facilitating seamless transactions of goods."
@@ -63,8 +63,8 @@ const Home = () => {
         <ProductSection
           id="puffer"
           link={"https://usepuffer.com"}
-          backgroundColor="#008080"
-          headerStyling={"text-[#F7FFFF]"}
+          backgroundColor="#F5FFFF"
+          headerStyling={"text-[#208C8C]"}
           backgroundImage={PufferBg}
           badge="Puffer"
           description="Puffer is an online platform that connects businesses of all sizes with highly skilled, pre-vetted freelancers for short-term and long-term projects."

@@ -96,7 +96,7 @@ const Header = () => {
           >
             <img src={logo} alt="logo" className="h-full" />
           </div>
-          <ul className="lg:flex text-lg hidden space-x-8 font-semibold">
+          <ul className="lg:flex text-base hidden space-x-8 font-medium">
             <li className="relative group">
               <button
                 ref={dropdownButtonRef}

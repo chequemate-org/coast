@@ -77,26 +77,26 @@ const ProductSection = ({
             reversed ? "lg:flex-row-reverse" : "lg:flex-row"
           } items-center`}
         >
-          <div className="lg:w-1/2 space-y-8 text-left lg:px-16 pt-24">
+          <div className="lg:w-1/2 space-y-8 text-left lg:px-16 pt-16">
             <h2
               className={`uppercase ${headerStyling} text-4xl lg:text-6xl font-bold tracking-tight`}
             >
               {badge}
             </h2>
-            <p className="lg:text-[24px] text-[18px] max-w-[460px] text-white lg:leading-[60px] leading-[40px]">
+            <p className="lg:text-[24px] text-[18px] max-w-[460px] text-[#00110D] lg:leading-[50px] leading-[40px]">
               {description}
             </p>
             <a
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary1 text-primary font-bold px-8 py-4 rounded-full uppercase hover:bg-primary4 transition flex items-center justify-center gap-3 text-lg lg:w-[240px] w-full sm:w-auto"
+              className="bg-primary text-primary1 font-bold px-8 py-4 rounded-full uppercase hover:bg-primary4 transition flex items-center justify-center gap-3 text-lg lg:w-[240px] w-full sm:w-auto"
             >
               {buttonText} <FaArrowRight />
             </a>
           </div>
 
-          <div className="lg:w-1/2 pr-[5%] lg:pt-[12%] pt-[30%] h-full relative flex items-end">
+          <div className="lg:w-[48%] pr-[5%] lg:pt-[14%] pt-[30%] h-full relative flex items-end">
             <img
               src={imageUrl}
               alt={imageAlt}
