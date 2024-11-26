@@ -49,7 +49,7 @@ const Footer = () => {
             />
           </div>
         </Link>
-        <p className="text-center leading-8 text-lg mb-12">
+        <p className="text-center leading-8 md:text-lg text-base mb-12">
           At Coast, our mission is to empower individuals and businesses, acting
           as the catalyst that bridges the gap between ambition and achievement
           with solutions and products tailored to make things run smoothly.
@@ -58,8 +58,8 @@ const Footer = () => {
         {/* Columns Container */}
         <div className="grid grid-cols-2 gap-x-[20%] gap-y-14 pl-5">
           {/* Company Section */}
-          <div className="w-full">
-            <h3 className="font-semibold mb-3 text-lg">Company</h3>
+          <div className="w-full md:text-base text-sm">
+            <h3 className="font-semibold mb-3 text-base md:text-lg">Company</h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/about-us" className="hover:text-primary3">
@@ -87,7 +87,9 @@ const Footer = () => {
 
           {/* Products Section */}
           <div className="w-full">
-            <h3 className="font-semibold mb-3 text-lg">Products</h3>
+            <h3 className="font-semibold mb-3 text-base md:text-lg">
+              Products
+            </h3>
             <ul className="space-y-3">
               <li>
                 <a
@@ -126,7 +128,9 @@ const Footer = () => {
 
           {/* Socials Section */}
           <div className="w-full">
-            <h3 className="font-semibold mb-3 text-lg">Our Socials</h3>
+            <h3 className="font-semibold mb-3 text-base md:text-lg">
+              Our Socials
+            </h3>
             <ul className="space-y-3">
               <li>
                 <a
@@ -173,7 +177,7 @@ const Footer = () => {
 
           {/* Legal Section */}
           <div className="w-full">
-            <h3 className="font-semibold mb-3 text-lg">Legal</h3>
+            <h3 className="font-semibold mb-3 text-base md:text-lg">Legal</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#terms" className="hover:text-primary3">
@@ -325,10 +329,9 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Bottom - Different styles for mobile and desktop */}
       <div className="container max-w-[1540px] mx-auto px-[5%] pt-[10%]">
         <div className="flex flex-col lg:flex-row justify-between items-center">
-          <p className="text-xs sm:text-sm mb-4 lg:mb-0">
+          <p className="md:text-lg text-base my-4 lg:mb-0">
             © 2024 All Right Reserved
           </p>
 

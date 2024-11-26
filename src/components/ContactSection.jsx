@@ -39,7 +39,7 @@ const ContactSection = ({ sectionId }) => {
           <ContactInfo
             icon={HiOutlineMail}
             title="Send us an Email"
-            content="helllo@coastgroup.tech"
+            content="hello@coastgroup.tech"
           />
 
           <ContactInfo
