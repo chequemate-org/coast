@@ -14,6 +14,7 @@ import quickshop from "./images/quickshop.svg";
 import missionImg from "./images/missionImg.svg";
 import chequemate from "./images/chequemate.svg";
 import HeroAboutImg from "./images/HeroAboutImg.svg";
+import HeroAboutImgM from "./images/HeroAboutImgM.svg";
 import CoastAboutImg from "./images/CoastAboutImg.svg";
 import aboutsection from "./images/aboutsection.svg";
 import users from "./icons/users.svg";
@@ -45,6 +46,7 @@ export {
   chequemate,
   missionImg,
   HeroAboutImg,
+  HeroAboutImgM,
   CoastAboutImg,
   aboutsection,
   handshake,

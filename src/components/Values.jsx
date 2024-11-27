@@ -26,13 +26,13 @@ const Features = () => {
     <div className=" h-fit pb-[10rem]">
       <div>
         <div className="flex flex-col justify-center items-center">
-          <div className="w-full mt-10 pb-6 flex flex-col space-y-5 justify-center items-center">
+          <div className="w-full mt-10 pb-0 md:pb-6 flex flex-col space-y-5 justify-center items-center">
             <Badge text="Our Values" className="text-primary" />
-            <h2 className="text-4xl font-bold text-primary max-w-[485px] text-center font-metropolis">
+            <h2 className="text-lg md:text-4xl font-bold text-primary max-w-[300px] md:max-w-[485px] text-center font-metropolis">
               The fundamental principles guiding us
             </h2>
           </div>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-4/5 mt-10 gap-[13px]">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-4/5 mt-5 md:mt-10 gap-[13px]">
             {features.map((data) => (
               <div
                 key={data.id}

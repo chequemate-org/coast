@@ -7,5 +7,5 @@
 }
 
 body {
-  @apply font-sans;
+  font-family: 'Metropolis', sans-serif;
 }
