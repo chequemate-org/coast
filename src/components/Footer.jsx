@@ -39,7 +39,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white pt-12 pb-4 z-100">
       {/* Mobile Footer */}
-      <div className="lg:hidden px-7">
+      <div className="lg:hidden px-5">
         <Link to={"/"}>
           <div className="flex justify-center">
             <img
@@ -56,11 +56,11 @@ const Footer = () => {
         </p>
 
         {/* Columns Container */}
-        <div className="grid grid-cols-2 gap-x-[20%] gap-y-14 pl-5">
+        <div className="grid grid-cols-2 gap-6 md:gap-x-[20%] gap-y-14 pl-5">
           {/* Company Section */}
           <div className="w-full md:text-base text-sm">
             <h3 className="font-semibold mb-3 text-base md:text-lg">Company</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-sm">
               <li>
                 <Link to="/about-us" className="hover:text-primary3">
                   About Us
@@ -90,7 +90,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-3 text-base md:text-lg">
               Products
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-sm">
               <li>
                 <a
                   onClick={() => handleLinkClick("comfort")}
@@ -131,7 +131,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-3 text-base md:text-lg">
               Our Socials
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-sm">
               <li>
                 <a
                   href="https://instagram.com"
@@ -178,7 +178,7 @@ const Footer = () => {
           {/* Legal Section */}
           <div className="w-full">
             <h3 className="font-semibold mb-3 text-base md:text-lg">Legal</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-sm">
               <li>
                 <a href="#terms" className="hover:text-primary3">
                   Terms of Service

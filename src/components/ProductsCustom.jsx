@@ -73,7 +73,7 @@ const ProductSection = ({
       <div className="w-full h-full flex">
         {/* Content Section */}
         <div
-          className={`w-full h-full flex flex-col justify-between ${
+          className={`w-full h-full flex flex-col pl-4 justify-between ${
             reversed ? "lg:flex-row-reverse" : "lg:flex-row"
           } items-center`}
         >

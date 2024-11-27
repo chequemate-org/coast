@@ -8,7 +8,7 @@ const OurProducts = ({ sectionId }) => {
     <div
       className="space-y-4 lg:w-[750px]"
     >
-      <h2 className={`inline-block capitalize text-5xl font-bold`}>
+      <h2 className={`inline-block capitalize text-3xl lg:text-5xl font-bold`}>
         Our Products
       </h2>
       <h4 className="text-[#4D4D4D] leading-8">
